@@ -33,6 +33,12 @@ Three test programs were implemented to validate the simulators:
 - Simulates how various microarchitectural configurations (e.g., number of lanes, memory banks) affect performance.
 
 ## Usage Instructions
-### Running the Functional Simulator:
-```bash
-python <netid>_funcsimulator.py --iodir <path/to/io/files>
+To perform the timing simulation, run driver.py file to generate the result.  
+To perform the design space analysis, run designSpaceAnalysis.py to generate the result.
+
+**Note:** 
+1. **SDMEM.txt, VDMEM.txt, Code.asm, functionalSimulator.py and timingSimulator.py must be in the same directory as the driver.py file.**
+2. **The output of the functionalSimulator.py is the input of the timingSimulator.py file**
+
+The instruction files and sample inputs for dot product, fully connected, convolution and fast fourier transforms are also given in the inputs directory. 
+To run the functions, the respective input files must be copied to the main directory.
